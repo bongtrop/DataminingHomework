@@ -30,7 +30,7 @@ def randNet(layer, type=SIGMOID):
 
   return net(layer, weight, bias, type)
 
-def json2net(filename):
+def load(filename):
   fr = open(filename, "r")
   ann = json.load(fr)
   layer = ann[0]

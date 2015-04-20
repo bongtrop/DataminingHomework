@@ -22,8 +22,8 @@ for valid in valids:
     trains = folds[valid[1]] + folds[valid[2]]
 
     # init mlp model and bp parameter
-    nn = net.randNet([16,30,1])
-    b = bp.bp(nn, 0.2, 0.2)
+    nn = net.randNet([16,3,1])
+    b = bp.bp(nn, 0.08, 0.08)
 
     # Train mlp model 200 epoch
     for i in range(0, 100):
